@@ -13,7 +13,7 @@ if len(num) == 6:
         sum1 = sum1 + num % 10 # + (num // 10) % 10 + (num // 100) % 10 
         num //= 10
     else:
-        sum2 = int(num % 10 + (num // 10) % 10 + num // 100)
+        sum2 = num % 10 + num // 10 % 10 + num // 100
     if sum1 == sum2:
         print('Поздравляем! У Вас счастливый билетик!')
     else: 
