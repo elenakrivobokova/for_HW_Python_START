@@ -10,7 +10,7 @@
 
 I ВАРИАНТ
 import random
-N = int(input('Введите натуральное число: '))
+N = int(input('Введите количество элементов в массиве: '))
 lst = [random.randint(0, 1) for i in range(N)]
 print(lst)
 x = random.randint(0, 1)
@@ -20,7 +20,7 @@ print(x)
 
 # II ВАРИАНТ
 # import random
-# N = int(input('Введите натуральное число: '))
+# N = int(input('Введите количество элементов в массиве: '))
 # lst = [random.randint(0, 1) for i in range(N)]
 # print(lst)
 # x = random.randint(0, 1)
