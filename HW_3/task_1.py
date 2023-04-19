@@ -8,17 +8,21 @@
 # 3
 # -> 1
 
-I ВАРИАНТ
+
 import random
 N = int(input('Введите количество элементов в массиве: '))
 lst = [random.randint(0, 1) for i in range(N)]
 print(lst)
 x = random.randint(0, 1)
 print(x)
-x = lst.count(x)
+
+x = lst.count(x) # I ВАРИАНТ
 print(x)
 
-# II ВАРИАНТ
+# my_lst = [i for i in lst if x == i] # II ВАРИАНТ
+# print(len(my_lst))
+
+# III ВАРИАНТ
 # import random
 # N = int(input('Введите количество элементов в массиве: '))
 # lst = [random.randint(0, 1) for i in range(N)]
