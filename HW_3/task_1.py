@@ -11,32 +11,27 @@
 
 import random
 N = int(input('Введите количество элементов в массиве: '))
-lst = [random.randint(0, 1) for i in range(N)]
+lst = [random.randint(0, 10) for i in range(N)]
 print(lst)
-x = random.randint(0, 1)
+x = int(input('Введите искомый элемент: '))
 print(x)
 
-x = lst.count(x) # I ВАРИАНТ
-print(x)
+# x = lst.count(x) # I ВАРИАНТ
+# print(x)
 
 # my_lst = [i for i in lst if x == i] # II ВАРИАНТ
 # print(len(my_lst))
+# my_lst = [x == i for i in lst] # III ВАРИАНТ
+# print(sum(my_lst))
 
-# III ВАРИАНТ
-# import random
-# N = int(input('Введите количество элементов в массиве: '))
-# lst = [random.randint(0, 1) for i in range(N)]
-# print(lst)
-# x = random.randint(0, 1)
-# print(x)
-# lst_1 = []
-# num = 0
-# for i in lst:
-#     if x == lst[num]:
-#         lst_1.append(x)
-#         num += 1
-#     elif x != lst[num]:
-#         num +=1
+# IV ВАРИАНТ
+lst_1 = []
+ind = 0
+for i in lst:
+    if x == lst[ind]:
+        lst_1.append(x)
+        ind += 1
+    else: ind += 1
 
-# print(lst_1)
-# print(len(lst_1))
+print(lst_1)
+print(len(lst_1))
