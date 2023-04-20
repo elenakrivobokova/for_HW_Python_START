@@ -19,8 +19,8 @@ print(x)
 # x = lst.count(x) # I ВАРИАНТ
 # print(x)
 
-# my_lst = [i for i in lst if x == i] # II ВАРИАНТ
-# print(len(my_lst))
+# my_lst = [x == i for i in lst] # II ВАРИАНТ
+# print(sum(my_lst))
 # my_lst = [x == i for i in lst] # III ВАРИАНТ
 # print(sum(my_lst))
 
