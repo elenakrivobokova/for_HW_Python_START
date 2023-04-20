@@ -18,7 +18,7 @@ print(x)
 
 ind = 0
 min = abs(x - lst[0])
-for i in range(2, N):
+for i in range(1, N):
     dif = abs(x - lst[i])
     if dif < min:
         min = dif
