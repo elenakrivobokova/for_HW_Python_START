@@ -15,7 +15,6 @@ lst = [random.randint(1, 5) for i in range(N)] # print(list(range(1, N+1)))
 print(lst)
 x = int(input('Введите натуральное число для сравнения: '))
 print(x)
-
 ind = 0
 min = abs(x - lst[0])
 for i in range(1, N):
