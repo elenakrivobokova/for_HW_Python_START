@@ -15,3 +15,9 @@ num_1= int(input('Введите число A: '))
 num_2 = int(input('Введите число B: '))
 print(exp(num_1, num_2))
 
+
+# 2й вариант
+
+# power = lambda a, b: a * power(a, b - 1) if b else 1
+
+# print(power(2, 4))
